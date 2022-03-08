@@ -5,8 +5,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        File infile = new File("Paste your Absolute path here");
-        File outfile = new File("Paste your Absolute path here");
+        File infile = new File("C:\\Users\\Dell Inspiron 7557\\Desktop\\TIC3001\\Project\\assignment 1\\KWIC\\input.txt");
+        File outfile = new File("C:\\Users\\Dell Inspiron 7557\\Desktop\\TIC3001\\Project\\assignment 1\\KWIC\\output2.txt");
         Pipe pipe1 = new Pipe();
         Pipe pipe2 = new Pipe();
         Pipe pipe3 = new Pipe();

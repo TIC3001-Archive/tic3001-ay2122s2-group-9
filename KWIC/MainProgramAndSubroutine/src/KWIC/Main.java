@@ -19,8 +19,8 @@ public class Main {
         scan.close();
 
 
-        File infile = new File("Paste your Absolute path here ");
-        File outfile = new File("Paste your Absolute path here");
+        File infile = new File("C:\\Users\\Dell Inspiron 7557\\Desktop\\TIC3001\\Project\\assignment 1\\KWIC\\input.txt ");
+        File outfile = new File("C:\\Users\\Dell Inspiron 7557\\Desktop\\TIC3001\\Project\\assignment 1\\KWIC\\output.txt");
 
         ArrayList<String> result;
         ArrayList<String> lineList ;
