@@ -22,10 +22,10 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
                     <archive>
-                        <mainfest>
+                        <manifest>
                             <addClasspath>ture</addClasspath>
                             <mainClass>KWIC.Main</mainClass>
-                        </mainfest>
+                        </manifest>
                     </archive>
                 </configuration>
             </plugin>
