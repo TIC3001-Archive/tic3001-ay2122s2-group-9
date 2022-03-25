@@ -1,20 +1,21 @@
 package KWIC;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 
 public class Input extends Filter{
-    private File infile;
-    public Input(File infile, Pipe output) {
+    private InputStream inputStream;
+
+    public Input(InputStream inputStream, Pipe output) {
         super(null, output);
-        this.infile = infile;
+        this.inputStream = inputStream;
     }
 
     @Override
-    protected void transform() throws IOException {
-        Scanner sc = new Scanner(infile);
+    protected void transform(){
+        Scanner sc = new Scanner(inputStream,"UTF-8");
         String line;
         while (sc.hasNext()){
             line = sc.nextLine();

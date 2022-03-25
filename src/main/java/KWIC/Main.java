@@ -2,6 +2,7 @@ package KWIC;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -9,9 +10,11 @@ public class Main {
 //        System.out.println(args[0]);//titles
 //        System.out.println(args[1]);//ignore
 //        System.out.println(args[2]);//required
-        File infile = new File(args[0]+".txt");
-        File infile2 = new File(args[1]+".txt");
-        File infile3 = new File(args[2]+".txt");
+        InputStream infile = Main.class.getResourceAsStream("/" + args[0] + ".txt");
+
+//        FileInputStream fileInputStream =
+        InputStream infile2 = Main.class.getResourceAsStream("/" + args[1] + ".txt");
+        InputStream infile3 = Main.class.getResourceAsStream("/" + args[2] + ".txt");
         File outfile = new File("output.txt");
 
         Pipe pipe1 = new Pipe();

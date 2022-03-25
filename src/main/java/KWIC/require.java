@@ -2,14 +2,15 @@ package KWIC;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class require extends Filter{
 
-    private File infile;
-    public require(File infile,Pipe input, Pipe output) {
+    private InputStream infile;
+    public require(InputStream infile,Pipe input, Pipe output) {
         super( input, output);
 
         this.infile=infile;
