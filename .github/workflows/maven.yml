@@ -26,6 +26,6 @@ jobs:
       run: mvn package
     - name: run jave 
       run: java -jar target/KWIC-1.0-SNAPSHOT.jar titles ignore required
-    - name: file check
-      run: ls -a
+    - name: output check
+      run: cat output.txt
       
