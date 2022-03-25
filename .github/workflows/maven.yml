@@ -23,4 +23,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn test
+      run: mvn package
+    - name: file check
+      run: ls -a
+      
