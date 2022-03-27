@@ -24,8 +24,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn package
-    - name: run jave 
-      run: java -jar target/KWIC-1.0-SNAPSHOT.jar titles ignore required
-    - name: output check
-      run: cat output.txt
+    - name: Maven test
+      run: mvn test
+
       
