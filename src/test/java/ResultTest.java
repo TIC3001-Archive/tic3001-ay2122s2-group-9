@@ -16,7 +16,7 @@ public class ResultTest {
     @Test
     void gernerateFileTest() throws IOException, InterruptedException {
         File createdFile = Main.generateFile("Titles", "Ignored", "Required");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         checkContentIsEqual(getRealFile("answer.txt"), createdFile);
 
     }
@@ -24,9 +24,8 @@ public class ResultTest {
     @Test
     void gernerateFileTest3() throws IOException, InterruptedException {
 
-
         File createdFile1 = Main.generateFile("Titles3", "Ignored3", "Required3");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         checkContentIsEqual(getRealFile("answer3.txt"), createdFile1);
     }
     private File getRealFile(String fileName) {
