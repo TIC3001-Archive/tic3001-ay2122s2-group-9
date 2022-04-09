@@ -1,0 +1,13 @@
+com\greek\kwic\ignore.class
+com\greek\kwic\Loop.class
+com\greek\kwic\Sort$AlphabetizerComparator.class
+com\greek\kwic\Output.class
+com\greek\kwic\Input.class
+com\greek\kwic\Filter.class
+com\greek\Application.class
+com\greek\kwic\require.class
+com\greek\kwic\Sort$1.class
+com\greek\kwic\Sort.class
+com\greek\kwic\Main.class
+com\greek\kwic\Pipe.class
+com\greek\SearchResult.class
